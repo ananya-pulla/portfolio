@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <HeaderNav />
-      <main className="pt-20 relative z-10">
+      <main className="pt-20">
         <AboutSection />
         <ProjectsSection />
         <ExperienceSection />

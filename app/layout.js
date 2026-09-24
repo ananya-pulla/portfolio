@@ -1,6 +1,5 @@
 import './globals.css'
 import Preloader from '../components/Preloader'
-import FloatingBubbles from '../components/FloatingBubbles'
 
 export const metadata = {
   title: 'Ananya Pulla • Complete Portfolio',
@@ -12,7 +11,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-brand-pink text-brand-dark antialiased">
         <Preloader />
-        <FloatingBubbles />
         {children}
       </body>
     </html>
