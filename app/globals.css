@@ -21,22 +21,13 @@ body {
   background: repeating-linear-gradient(135deg, #D9006C 0px, #D9006C 12px, #FFFDF7 12px, #FFFDF7 22px, #3B82F6 22px, #3B82F6 34px, #FFFDF7 34px, #FFFDF7 44px);
 }
 
-/* Floating Interactive Background Bubbles */
-@keyframes floatUp {
-  0% {
-    transform: translateY(112vh);
-  }
-  100% {
-    transform: translateY(-112vh);
-  }
-}
-
-@keyframes bubbleSway {
+/* Document-bound Interactive Background Bubbles */
+@keyframes bubbleDrift {
   0%, 100% {
-    transform: translateX(0px);
+    transform: translate(0px, 0px);
   }
   50% {
-    transform: translateX(var(--sway-dist, 35px));
+    transform: translate(var(--sway-dist, 30px), var(--float-dist, -45px));
   }
 }
 
@@ -58,5 +49,6 @@ body {
   border-radius: 50%;
   pointer-events: none;
 }
+
 
 
