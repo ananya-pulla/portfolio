@@ -60,7 +60,7 @@ export default function FloatingBubbles() {
   if (bubbles.length === 0) return null
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none">
+    <div className="fixed inset-0 pointer-events-none z-30 overflow-hidden select-none">
       {bubbles.map((b) => (
         <div
           key={b.id}
@@ -114,6 +114,7 @@ export default function FloatingBubbles() {
                 type="button"
                 aria-label="Pop bubble"
                 onClick={(e) => handlePop(b.id, e)}
+                onMouseDown={(e) => handlePop(b.id, e)}
                 className="w-full h-full rounded-full bubble-gloss cursor-pointer transition-transform duration-150 hover:scale-115 active:scale-90 focus:outline-none"
                 style={{ opacity: b.opacity }}
               />
