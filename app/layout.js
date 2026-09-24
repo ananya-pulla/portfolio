@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative bg-brand-pink text-brand-dark antialiased min-h-screen overflow-x-hidden">
+      <body className="bg-brand-pink text-brand-dark antialiased">
         <Preloader />
         <FloatingBubbles />
         {children}
